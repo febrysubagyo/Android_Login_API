@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/bg_login"
+    android:background="@mipmap/laundry_bg"
     android:gravity="center"
     android:orientation="vertical"
-    android:padding="10dp" >
+    android:padding="10dp"
+    android:weightSum="1">
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -24,9 +27,10 @@
             android:hint="@string/hint_email"
             android:inputType="textEmailAddress"
             android:padding="10dp"
-            android:singleLine="true"
+            android:paddingTop="30dp"
             android:textColor="@color/input_login"
-            android:textColorHint="@color/input_login_hint" />
+            android:textColorHint="@color/input_login_hint"
+            android:singleLine="true" />
 
         <EditText
             android:id="@+id/password"
@@ -50,7 +54,8 @@
             android:layout_marginTop="20dip"
             android:background="@color/btn_login_bg"
             android:text="@string/btn_login"
-            android:textColor="@color/btn_login" />
+            android:textColor="@color/btn_login"
+            android:elevation="0dp" />
 
         <!-- Link to Login Screen -->
 
